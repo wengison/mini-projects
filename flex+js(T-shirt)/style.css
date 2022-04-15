@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+/* ---- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.body-container {
+    width: 85%;
+    height: 130vh;
+    border: grey 2px solid;
+    list-style: none;
+}
+
+.container-label {
+    width: 100%;
+    height: 10%;
+    min-height:100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.55em;
+    padding-top: 10px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+/* first-line */
+.container-first-line {
+    width: 100%;
+    height: 50%;
+    min-height: 480px;
+    padding: 2%;
+    /* display: grid; */
+    display: flex;
+    justify-content: center;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    gap: 2em;
+    /* justify-content: space-between; */
+    border: black solid 1px;;
+    overflow: hidden;
+    position: relative;
+}
+
+#first-line-next {
+    position: absolute;
+    top:50%;
+    right:0;
+    margin-right: 5px;
+    padding: 15px;
+    font-size: 2.5em;
+    opacity: .5;
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.first-line-card {
+    width: 100%;
+    max-width: 380px;
+    min-width: 300px;
+    height: 100%;
+    border: black solid 3px;
+    outline: solid whitesmoke 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.first-line-card .card-pic {
+    width: 100%;
+    height: 70%;
+    margin-top: 0px;
+    overflow: hidden;
+    background: url(img/chick1.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: .2s;
+}
+.first-line-card .card-pic-1 {
+    background: url(img/chick1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.first-line-card .card-pic-2 {
+    background: url(img/dick1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.first-line-card .card-pic-3 {
+    background: url(img/bitches1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.first-line-card .card-info {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    padding-bottom: 15px;
+    align-items: flex-end;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    list-style:circle;
+}
+.first-line-card .card-info .left {
+    color: black;
+    width: 75%;
+    padding: 5px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+
+.first-line-card .card-info .right {
+    width: 20%;
+    border: solid black 1px;
+    padding: 5px;
+    border-radius: 10px;
+}
+/* second-line */
+.container-second-line {
+    width: 100%;
+    height: 25%;
+}
+/* third-line */
+.container-third-line {
+    width: 100%;
+    height: 25%;
+}
