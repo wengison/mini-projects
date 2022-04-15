@@ -8,17 +8,19 @@
 
 body {
     width: 100%;
-    height: auto;
+    height: 150vh;
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
+    padding: 5%;
 }
 
 .body-container {
-    width: 85%;
+    width: 90%;
     height: 130vh;
-    border: grey 2px solid;
+    /* border: grey 2px solid; */
     list-style: none;
+    overflow: hidden;
 }
 
 .container-label {
@@ -31,23 +33,29 @@ body {
     padding-left: 15px;
     overflow: hidden;
 }
+.h1-t-shirt {
+    font-size: 1.75em;
+}
 /* first-line */
 .container-first-line {
     width: 100%;
     height: 50%;
     min-height: 480px;
-    padding: 2%;
+    padding: 1%;
     /* display: grid; */
     display: flex;
     justify-content: center;
+    /* justify-content: flex-end; */
     grid-auto-flow: row;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
-    gap: 2em;
+    gap: 2.25em;
     /* justify-content: space-between; */
-    border: black solid 1px;;
+    border-top: black solid 1px;;
     overflow: hidden;
     position: relative;
+    transform-style: preserve-3d;
+    transition: transform .55s ease-in-out;
 }
 
 #first-line-next {
@@ -56,11 +64,17 @@ body {
     right:0;
     margin-right: 5px;
     padding: 15px;
-    font-size: 2.5em;
+    font-size: 2em;
+    font-weight: bold;
     opacity: .5;
     border: solid rgb(0, 0, 0) 1px;
+    background: white;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#first-line-next:hover {
+    opacity: .8;
 }
 
 .first-line-card {
@@ -74,7 +88,8 @@ body {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    transition: .5s;
+    transform-style: preserve-3d;
+    transition: opacity .55 ease-in-out;
 }
 
 .first-line-card .card-pic {
